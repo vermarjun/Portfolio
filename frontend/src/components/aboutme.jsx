@@ -67,7 +67,7 @@ function Aboutme(){
               <p>
               {
                 aboutme.split('\n').map((line, index)=>{
-                    return <>{line}<br/></>
+                    return <p key={index}>{line}<br/></p>
                 })      
               }
               </p>

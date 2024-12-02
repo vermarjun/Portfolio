@@ -33,7 +33,7 @@ function Contact(){
                             <p className="text-xl font-light">
                                 {
                                     aboutme.split('\n').map((line, index)=>{
-                                        return <p className="mt-2">{line}<br/></p>
+                                        return <p key={index} className="mt-2">{line}<br/></p>
                                     })      
                                 }
                             </p>
