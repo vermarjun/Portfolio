@@ -17,7 +17,7 @@ function Aboutme(){
         <div className="bg-black sm:w-5/6 w-full h-5/6 sm:p-10 p-7 sm:flex justify-between items-center">
           <div className="sm:w-5/12 h-full ">
             <div className="sm:h-1/2 w-full sm:flex justify-between items-start">
-              <img src={Arjun} alt="" className="sm:h-full rounded-lg"/>
+              <img src={Arjun} alt="" className="sm:h-full rounded-lg" loading="lazy"/>
               <div className="sm:my-0 my-3">
                 <div className="mb-3">
                   <span className="text-lg">Name:</span>

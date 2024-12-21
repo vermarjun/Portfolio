@@ -40,11 +40,11 @@ function Contact(){
                         </div>
                         <div className="">
                             <div className="mt-2 flex gap-2 justify-start items-center">
-                                <img src={email} alt="" className="h-4"/>
+                                <img src={email} alt="" className="h-4" loading="lazy"/>
                                 <p>vermarjun26@gmail.com</p>
                             </div>
                             <div className="mt-2 flex gap-2 justify-start items-center">
-                                <img src={call} alt="" className="h-4 "/>
+                                <img src={call} alt="" className="h-4 " loading="lazy"/>
                                 <p>6378560286</p>
                             </div>
                         </div>

@@ -12,19 +12,19 @@ function Footer(){
             </div>
             <div className="gap-x-5 flex justify-center items-center w-full">
                 <a href="https://in.linkedin.com/in/arjun-verma-59962528a" target="_blank">
-                    <img src={linkedin} alt="" className="group"/>
+                    <img src={linkedin} alt="" className="group" loading="lazy"/>
                 </a>
                 <a href="https://www.instagram.com/vermarjun_/" target="_blank">
-                    <img src={instagram} alt="" />
+                    <img src={instagram} alt="" loading="lazy"/>
                 </a>
                 <a href="https://github.com/vermarjun" target="_blank">
-                    <img src={github} alt="" />
+                    <img src={github} alt="" loading="lazy"/>
                 </a>
                 <a href="https://codeforces.com/profile/vermarjun" target="_blank">
-                    <img src={codeforces} alt="" />
+                    <img src={codeforces} alt="" loading="lazy"/>
                 </a>
                 <a href="https://leetcode.com/u/vermarjun/" target="_blank">
-                    <img src={leetcode} alt="" className="h-[40px]"/>
+                    <img src={leetcode} alt="" className="h-[40px]" loading="lazy"/>
                 </a>
             </div>
         </div>
