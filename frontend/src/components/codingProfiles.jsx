@@ -275,7 +275,7 @@ const LinksToCodingProfiles = () => {
          return <BadgeComponent profile={profile} index={key}/>
       })
       return (        
-            <div className="bg-black h-full">
+            <div className="sm:bg-black bg-neutral-900 h-full">
                 <div className=" flex flex-col justify-center items-start">
                     <p className="text-sm font-semibold px-5 mt-5">
                         Coding Profile Links
@@ -302,7 +302,7 @@ function BadgesAcrossAllPlatforms(){
       })
     return (
             <div className="flex flex-col w-full h-full">
-                <div className="bg-black py-5 h-full">
+                <div className="sm:bg-black bg-neutral-900 py-5 h-full">
                     <div className="w-full flex justify-start items-baseline gap-2 mb-5 ml-5">
                         <p className=" text-sm">Badges</p>
                         <p className="font-bold text-lg">{images.length}</p>
@@ -320,7 +320,7 @@ function ProblemsSolvedDonutGraph(){
         <>
             {/* c = yellow b = red a = green */}
             <div className="sm:flex-none flex flex-col gap-2 w-full bg-neutral-950">
-                <div className="w-full bg-black px-5 py-3">
+                <div className="w-full sm:bg-black bg-neutral-900 px-5 py-3">
                         <p className="ml-10 mb-4 font-semibold">DSA</p>
                     <div className="flex w-full gap-5">
                         <DonutChart a={10} b={10} c={116}/>
@@ -340,7 +340,7 @@ function ProblemsSolvedDonutGraph(){
                         </div>
                     </div>
                 </div>
-                <div className="w-full bg-black px-5 py-3">
+                <div className="w-full sm:bg-black bg-neutral-900 px-5 py-3">
                         <p className="ml-10 mb-4 font-semibold">COMPETITIVE PROGRAMMING</p>
                     <div className="flex w-full gap-5">
                         <DonutChart a={10} b={10} c={116}/>
@@ -474,14 +474,14 @@ function CodingProfiles(){
         fetchLeetCodeData();
     }, []);
     return (
-        <div className="flex flex-col gap-5 justify-center items-center w-full h-full sm:h-screen bg-neutral-950 text-white">
+        <div className="flex flex-col gap-5 justify-center items-center w-full h-full sm:h-screen bg-neutral-950  text-white">
             <div>
                 <p className="mb-5 text-center text-5xl font-bold">Coding Profiles</p>
                 <p className="text-center">Across Various Platforms (Displaying real time data)</p>
             </div>
             <div className="sm:flex sm:w-5/6 w-full h-fit px-5 mt-2">
                 <div className="sm:flex justify-between gap-5 sm:w-1/2 sm:mr-5">
-                    <div className="flex justify-center items-center bg-black w-full sm:h-40 py-5 sm:py-0 sm:p-5 mb-2 sm:mb-0">
+                    <div className="flex justify-center items-center sm:bg-black bg-neutral-900 w-full sm:h-40 py-5 sm:py-0 sm:p-5 mb-2 sm:mb-0">
                         <div>
                         <p className="text-xs">
                             Total Questions
@@ -493,7 +493,7 @@ function CodingProfiles(){
                         </p>
                         </div>
                     </div>
-                    <div className="flex justify-center items-center gap-6 bg-black sm:w-fit w-full sm:h-40 p-5 mb-2 sm:mb-0">
+                    <div className="flex justify-center items-center gap-6 sm:bg-black bg-neutral-900 sm:w-fit w-full sm:h-40 p-5 mb-2 sm:mb-0">
                         <div>
                             <p className="text-xs">
                                 Total Contests
@@ -523,7 +523,7 @@ function CodingProfiles(){
                         </div>
                     </div>
                 </div>
-                <div className="sm:w-1/2 w-full sm:h-40 h-fit flex flex-col gap-2 bg-black py-5 sm:p-5 px-2">
+                <div className="sm:w-1/2 w-full sm:h-40 h-fit flex flex-col gap-2 sm:bg-black bg-neutral-900 py-5 sm:p-5 px-2">
                     <div className="w-full flex justify-between items-center">
                         Github
                         <div className="sm:flex gap-8 justify-between items-center hidden">
@@ -559,7 +559,7 @@ function CodingProfiles(){
                 </div>
             </div>
             <div className="sm:flex sm:w-5/6 w-full h-full sm:px-0 px-5 sm:gap-0">
-                <div className="h-full sm:w-2/6 flex flex-col gap-10 sm:ml-5 items-center justify-center  text-white bg-black">
+                <div className="h-full sm:w-2/6 flex flex-col gap-10 sm:ml-5 items-center justify-center  text-white sm:bg-black bg-neutral-900">
                     <ProblemsSolvedDonutGraph/>
                 </div>
                 <div className="flex flex-col sm:w-4/6 w-full sm:h-full h-full sm:px-5 sm:mt-0 mt-2 gap-2">
